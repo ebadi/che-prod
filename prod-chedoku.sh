@@ -1,6 +1,5 @@
 #/bin/bash
-./test-chedoku.sh
-rm -rf /tmp/chedoku-prod
+
 
 git clone git@github.com:ebadi/che-prod.git  /tmp/chedoku-prod
 rsync -avh --progress . /tmp/chedoku-prod --exclude .git --delete
