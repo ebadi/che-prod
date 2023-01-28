@@ -128,40 +128,16 @@
     //124. but wrong message... not a perfect solution it's a yellow notification, so should not have that anyways ... : FIXED
     //124. Google analytics privacy  warning GDPR on popup: FIXED
     //125. Remove tools from public github.io: FIXED
-
-
-    // 62. Make alerts less flashy : LOW PRIORITY
-    // 82. Optimize and improve speed  : LOW PRIORITY
-    // 86. Obfuscate javascript : LOW PRIORITY
-    // 63. Try to reduce the number of used CSS files. & Try to reduce the number of used JavaScript files. : LOW PRIORITY
-    // 36. Add Microsoft auth : LOW PRIORITY
-    // 49. Swap two pieces by dropping one piece on another (esp on mobile). : LOW PRIORITY
-    // 53. One random piece that is not correctly placed, to be positioned correctly as a hint : LOW PRIORITY
-    // 55. Make sure that distance is measured (specially considering black pieces) between solution and current threat : LOW PRIORITY
-    // 57. A button the removes all pieces temporary from the board?? : LOW PRIORITY
-    //104. clicked "close" withing the Tutorial Box, remove close button :LOW PRIORITY
-    //110. Add the case to the tutorial :  LOW PRIORITY
-
-    // 90. SPARE COUNT  https://github.com/oakmac/chessboardjs/pull/190 : LOW PRIORITY
-    // 95. Popup subscription after 30 second of idle time : LOW PRIORITY
-    // 98. Make merge homepuzzle() with levelPuzzle()??
-    // 99. Convert JavaScript to Mobile Apps for Android and iOS https://www.mobiloud.com/use-cases/convert-javascript-to-apps
-https://codepen.io/saharmm/pen/XQQjwq  // 103.  PWA install
-
-    //100. One UI suggestion is to use a diverging color palette for the larger numbers so there are different hues for too many versus too few attackers.
-    //101. Create a FAQ from Popular posts (links in accounts.txt)
-    //102. Printer friendly puzzle book
-    //103. Install GA tag on wordpress
-     //119. feature request: keep the difficulty slider but hide all other settings behind a button: click/drag mode, hint mode [optional new settings: include/exclude black pieces . Zone mode :  REJECT
-    //120. Setting for filter black pieces :  REJECT
-    //105. Share my time and #moves :  REJECT, other ALTERNATIVE
-    //118. feature request: make the login useful by showing stats about solved puzzles, then add the login to the main popup message, and optionally create a message to remind users to log in to save their data LOW PRIORITY
-    //109. You data is in cookie, if you want to save it your need to register. Long term feature LOW PRIORITY
-    //117. Reset doesn't close the solution notification LOW PRIORITY
-
-    //123. the level slider issue also occurs when coming from the daily puzzle, not just the tutorial
-
-
+    //126. Find the callback fir firebase authentication : FIXED
+    //129. Add solution type and time stamp to DB : FIXED
+    //128. Make #login to work # FIXED
+    //132. Inner links to puzzles don't work (e.g. game history & rules) : FIXED
+    //124. Collect WHEN the user played a game :FIXED
+    //133. UI for user to see what they have solved, average time, etc puzzleids, findUnsolvedPuzzle, load_user_data, update_user_data
+    //125. List of puzzles that are solved with the best time. Total time spent, and items with these info (date, level, puzzleid, time, num_moves, link to puzzle)  https://codepen.io/imoaazahmed/pen/QmBovY : FIXED
+    //133. Fix internal link to puzzle in about/rule section : FIXED
+    //129. Check if you play, then login it will not overwrite your data : WORKS FINE
+    //130. https://chesscircuit.substack.com/p/looking-forward-to-chess-in-2023 : FIXED
 
     // 118. Russ Williams  I was going through the tutorial problems (which are very easy
     indeed!) and I saw an apparent bug at problem 30 when I first see
@@ -179,6 +155,44 @@ https://codepen.io/saharmm/pen/XQQjwq  // 103.  PWA install
     problem 30 again, but with no numbers. Then I hit Next again, and it
     returned to problem 1.
     //124. Yes, that helps clear things up.  I would say that just by playing the puzzle, finding the perfect solution is not very intuitive.  I understand now what you mean, after having read your explanation.  Perhaps there's a way to advise the player why their solution is not perfect (highlight the cells that are attacked and shouldn't be while the banner is still open perhaps?) to make it more intuitive without having to go to the rule book.
+
+    // 62. Make alerts less flashy : LOW PRIORITY
+    // 82. Optimize and improve speed  : LOW PRIORITY
+    // 86. Obfuscate javascript : LOW PRIORITY
+    // 63. Try to reduce the number of used CSS files. & Try to reduce the number of used JavaScript files. : LOW PRIORITY
+    // 36. Add Microsoft auth : LOW PRIORITY
+    // 49. Swap two pieces by dropping one piece on another (esp on mobile). : LOW PRIORITY
+    // 53. One random piece that is not correctly placed, to be positioned correctly as a hint : LOW PRIORITY
+    // 55. Make sure that distance is measured (specially considering black pieces) between solution and current threat : LOW PRIORITY
+    // 57. A button the removes all pieces temporary from the board?? : LOW PRIORITY
+    //104. clicked "close" withing the Tutorial Box, remove close button :LOW PRIORITY
+    //110. Add the case to the tutorial :  LOW PRIORITY
+    //134. URL hash for login changes to tutorial/puzzle.: LOW PRIORITY
+    // 90. SPARE COUNT  https://github.com/oakmac/chessboardjs/pull/190 : LOW PRIORITY
+    // 95. Popup subscription after 30 second of idle time : LOW PRIORITY
+    // 98. Make merge homepuzzle() with levelPuzzle()??
+    // 99. Convert JavaScript to Mobile Apps for Android and iOS https://www.mobiloud.com/use-cases/convert-javascript-to-apps
+https://codepen.io/saharmm/pen/XQQjwq  // 103.  PWA install
+
+    //100. One UI suggestion is to use a diverging color palette for the larger numbers so there are different hues for too many versus too few attackers.
+    //101. Create a FAQ from Popular posts (links in accounts.txt)
+    //102. Printer friendly puzzle book
+    //103. Install GA tag on wordpress
+     //119. feature request: keep the difficulty slider but hide all other settings behind a button: click/drag mode, hint mode [optional new settings: include/exclude black pieces . Zone mode :  REJECT
+    //120. Setting for filter black pieces :  REJECT
+    //105. Share my time and #moves :  REJECT, other ALTERNATIVE
+    //118. feature request: make the login useful by showing stats about solved puzzles, then add the login to the main popup message, and optionally create a message to remind users to log in to save their data LOW PRIORITY
+    //109. You data is in cookie, if you want to save it your need to register. Long term feature LOW PRIORITY
+    //117. Reset doesn't close the solution notification LOW PRIORITY
+    //123. the level slider issue also occurs when coming from the daily puzzle, not just the tutorial : TEST
+
+
+    //127. Move Blogpost to chedoku.com 
+    //128. Answer to Dirk - Add the link to the website about 
+    //131. Answer to Stewart
+
+    //132. Cleanup console.log
+    //134. Userdata to Cookie!?
 
 ```
 
