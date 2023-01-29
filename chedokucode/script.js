@@ -140,10 +140,12 @@ function checkSolution() {
       user_game_results[resultIndex] = newItem
     }catch (error) {
       // add the item
+      console.log(error)
       user_game_results.push(newItem)
     }
 
     try {
+      update_user_data();
       loadingStatistic();
       load_user_data();
     }
@@ -348,8 +350,23 @@ function loadPuzzle(level, puzzleID) {
     reset()
     boardChangedUpdateGame();
     //boardChangedUpdateGame();
+
+    prev_puzzle_info = ''
+    for (i in user_game_results){
+      game_info = user_game_results[i]
+      if (game_info.l == level && game_info.gid == puzzleID ){
+        human_time = secondToStr(game_info.t)
+        if (game_info.st){
+          perfect_format = "✅"
+        }else{
+          perfect_format = "☑️"
+        }
+        prev_puzzle_info = `&nbsp; Time: ${human_time} &nbsp; Moves:${game_info.m}  ${perfect_format}`
+      }
+    }
+
     $('#infotext1').html('Challenge yourself by adjusting the difficulty level: <b> ' + current_level + '</b>');
-    $('#infotext2').html('Puzzle ID: <b> ' + puzzleID + '</b>');
+    $('#infotext2').html('Puzzle ID: <b> ' + puzzleID + '</b>' + prev_puzzle_info);
     document.getElementById("offboard_item").checked = (dropOffBoard == 'trash');
     document.getElementById("strictmode_item").checked = strictSolution;
 
@@ -375,8 +392,6 @@ function loadPuzzle(level, puzzleID) {
 
   }).fail(function () {
     console.log("ERROR loading puzzle")
-    current_puzzleID = current_puzzleID
-    index = 0
   });
 
 }
@@ -449,6 +464,7 @@ function loadGame(level, puzzleID) {
     current_level = level;
     current_puzzleID = puzzleID;
   }
+
 
   loadPuzzle(current_level, current_puzzleID)
   board = ChessBoard('board')
