@@ -495,7 +495,8 @@ body {
 .popup {
   display: inline-block;
   width: 270px;
-  height: 450px;
+  height: 470px;
+
   padding: 10px;
   min-height: 300px;
   background-color: white;
@@ -1076,7 +1077,7 @@ body {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(/static/font/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  src: url(../static/font/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
 
 .material-icons {
