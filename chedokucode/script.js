@@ -381,6 +381,8 @@ function loadPuzzle(level, puzzleID) {
       window.location.hash = 'about'
     } else if (window.location.hash == 'rules') {
       window.location.hash = 'rules'
+    } else if (window.location.hash == 'download') {
+      window.location.hash = 'download'
     } else if (window.location.hash == 'login') {
       window.location.hash = 'login'
     } else if (window.location.hash == 'dailypuzzle') {
@@ -816,6 +818,7 @@ function disableAllComponents() {
   //document.getElementById("mailist").style.display = "none";
   document.getElementById("footer").style.display = "none";
   document.getElementById("rules").style.display = "none";
+  document.getElementById("download").style.display = "none";
 }
 
 function currentDate() {
@@ -886,7 +889,11 @@ function tutorial() {
   window.location.hash = 'tutorial'
 }
 
-
+function download() {
+  disableAllComponents();
+  document.getElementById("download").style.display = "block";
+  window.location.hash = 'download'
+}
 
 
 function login(){
@@ -1011,6 +1018,13 @@ function subscription() {
   }
   document.getElementById('item-info-side').onclick = function (e) {
     about()
+  }
+  // DOWNLOAD
+  document.getElementById('item-download').onclick = function (e) {
+    download()
+  }
+  document.getElementById('item-download-side').onclick = function (e) {
+    download()
   }
   // RULES
   document.getElementById('item-rules').onclick = function (e) {
