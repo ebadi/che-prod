@@ -55,7 +55,7 @@ function redirect_if_inapp_chedoku_reachable() {
       res.json()).then(d => {
         console.log("in app and connected to the internet" + d)
         if (d != null) {
-          window.location.href = "https://www.chedoku.com/" + window.location.hash + "&#nopopup";
+          window.location.href = "https://chedoku.com/" + window.location.hash + "&#nopopup";
         }
       }
       ).catch(function (error) {
