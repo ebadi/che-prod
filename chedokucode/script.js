@@ -441,7 +441,7 @@ var onChange = function (oldPos, newPos) {
   // console.log("onChange", board.fen());
   // boardChangedUpdateGame();
   // Throwing piece outside the board doesnot trigger any event that has the new board position, a hack to bypass this.
-  setTimeout(() => onChangeHook(), 100)
+  setTimeout(() => onChangeHook(), 10)
 
 };
 function onChangeHook() {
