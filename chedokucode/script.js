@@ -83,9 +83,9 @@ function millisecondsToStr(milliseconds) {
   min = Math.floor((milliseconds / 1000 / 60) << 0);
   sec = Math.floor((milliseconds / 1000) % 60);
   if (min == 0) {
-    return (" " + sec + " seconds ")
+    return (" " + sec + " seconds")
   } else {
-    return (" " + min + " minutes " + sec + " seconds ")
+    return (" " + min + " minutes " + sec + " seconds")
   }
 }
 
@@ -153,7 +153,7 @@ function checkSolution() {
 
   if (! is_solution_is_pressed && solution) {
     if (foundStrictSolution) {
-      msg = `Congratulations! You found the perfect solution ✅ in ${current_puzzle_moves} moves and ${durStr}. Share it with your friends by clicking here: `
+      msg = `Congratulations! You found the perfect solution ✅ in just ${current_puzzle_moves} moves and within ${durStr}. Share it with your friends by clicking here: `
       msgtype = "success"
       if (current_level > 2020 && current_level < 2050) {
         socialmedia_text = `I found the perfect solution ✅ for today's (${date}) Chedoku puzzle in ${current_puzzle_moves} moves and ${durStr}.  #chedoku #puzzle #chess Challenge yourself with today's puzzle here: `
@@ -163,7 +163,7 @@ function checkSolution() {
         socialmedia_url = `https://chedoku.com/#gid=${current_puzzleID}&d=${current_level}`
       }
     } else {
-      msg = `Congratulations! You found a valid solution in ${current_puzzle_moves} moves and ${durStr}. You can keep playing to find the perfect solution that has no additional threats on empty squares,   <a href="#Foo" onclick="rules(); return false;">Learn more about rules</a> .`
+      msg = `Congratulations! You found a valid solution in ${current_puzzle_moves} moves and within ${durStr}. You can keep playing to find the perfect solution that has no additional threats on empty squares,   <a href="#Foo" onclick="rules(); return false;">Learn more about rules</a> .`
       msgtype = "warning"
       if (current_level > 2020 && current_level < 2050) {
         socialmedia_text = `I found a solution ☑️ for today's (${date}) Chedoku puzzle in ${current_puzzle_moves} moves and ${durStr}.  #chedoku #puzzle #chess Challenge yourself with today's puzzle here: `
