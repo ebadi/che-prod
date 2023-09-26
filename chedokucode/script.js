@@ -56,7 +56,7 @@ function redirect_if_inapp_chedoku_reachable() {
         console.log("in app and connected to the internet" + d)
         if (d != null) {
           // redirect 
-          window.location.href = "https://chedoku.com/" + window.location.hash + "&#nopopup";
+          //window.location.href = "https://chedoku.com/" + window.location.hash + "&#nopopup";
         }
       }
       ).catch(function (error) {
@@ -101,7 +101,7 @@ function cuteToast(type, message, socialmedia_url, socialmedia_text) {
       <a href="http://www.facebook.com/share.php" id="notification-facebook" ><img src="static/social/fb.png" alt="Share this Chedoku on Facebook" border="0" rel="nofollow noopener"/></a>
       <a href="http://twitter.com/intent/tweet" id="notification-twitter" ><img src="static/social/twitter.png" alt="Tweet this Chedoku" border="0" rel="nofollow noopener" /></a>
       <b style="display:inline" id="cliboardinput"></b>
-      <button style="display:inline;width: 20px;border: 0;" class="btn" onclick="copyContent()"><img src="static/clipboard.svg" border="0" /></button>
+      <button style="display:inline;border: 0;background: transparent;" class="btn" onclick="copyContent()"><img src="static/clipboard.png" border="0" style="height: 20px;width: 20px;" /></button>
     `
 
     document.querySelector('#notification-facebook').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(socialmedia_url);
