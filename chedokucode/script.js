@@ -19,7 +19,7 @@ function adjustSlider() {
 }
 
 // github.io, or chedoku.com
-function inApp(){
+function appOffline(){
   if (window.location.href.toLowerCase().indexOf("chedoku") == -1 
   && window.location.href.toLowerCase().indexOf("github") == -1 
     ){
@@ -41,7 +41,7 @@ function ApplyAppModifications() {
 }
 
 function redirect_if_inapp_chedoku_reachable() {
-  if (inApp()) {
+  if (appOffline()) {
     // localhost, app
     console.log("chedokuApp: loading from localhost or the app, customization activated")
     document.addEventListener("DOMContentLoaded", (event) => {
@@ -56,7 +56,7 @@ function redirect_if_inapp_chedoku_reachable() {
         console.log("in app and connected to the internet" + d)
         if (d != null) {
           // redirect 
-          //window.location.href = "https://chedoku.com/" + window.location.hash + "&#nopopup";
+          window.location.href = "https://chedoku.com/" + window.location.hash + "&#chedokcomInApp=true";
         }
       }
       ).catch(function (error) {
@@ -595,6 +595,7 @@ function loadUserGameFromServer() {
     database.ref().child('game_played/' + firebase.auth().currentUser.uid).once('value').then(function (lead) {
       //console.log(lead.val().userGameResults);
       serverUserGameResults = JSON.parse(lead.val());
+      if(serverUserGameResults == null) serverUserGameResults = []
       console.log("serverUserGameResults", serverUserGameResults.length)
       console.log("userGameResultsX", userGameResults.length)
       if (userGameResults.length > 0) {
