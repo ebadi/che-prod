@@ -42,16 +42,6 @@ function getUiConfig(inApp=false) {
         clientId: CLIENT_ID
       },
       {
-        provider: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        iconUrl: 'firebase/logo/facebook.svg',
-        scopes :[
-          'public_profile',
-          'email',
-          'user_likes',
-          'user_friends'
-        ]
-      },
-      {
         provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
         // Whether the display name should be displayed in Sign Up page.
         iconUrl: 'firebase/logo/mail.svg',
