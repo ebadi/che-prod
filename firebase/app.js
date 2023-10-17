@@ -148,7 +148,7 @@ var handleSignedInUser = function(user) {
 var handleSignedOutUser = function() {
   document.getElementById('user-signed-in').style.display = 'none';
   document.getElementById('user-signed-out').style.display = 'block';
-  ui.start('#firebaseui-container', getUiConfig(chedokcomInApp));
+  ui.start('#firebaseui-container', getUiConfig(chedokucomInApp));
   // CHEDOKU code
   accountInfoUIrefresh()
 };
@@ -201,7 +201,7 @@ function handleConfigChange() {
       currentAdminRestrictedOperationStatus);
   // Reset the inline widget so the config changes are reflected.
   ui.reset();
-  ui.start('#firebaseui-container', getUiConfig(chedokcomInApp));
+  ui.start('#firebaseui-container', getUiConfig(chedokucomInApp));
 }
 
 

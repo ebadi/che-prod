@@ -456,7 +456,7 @@
 
 
     <div class="mycenter" id="boardcontrol">
-      <span id="infodate" style="margin-right:5px;"></span>
+      <span id="infodate" ></span>
       <span id="infotextAccount" style="margin-right:5px;"></span><br>
       <button type="submit" id="solution" class="stylish">
         <i class='material-icons'>emoji_objects_outlined</i> Solution <br>
@@ -579,7 +579,10 @@
 
 
   <script type="text/javascript">//<![CDATA[
-    chedokcomInApp= window.location.hash.includes('chedokcomInApp')
+    chedokucomInApp= window.location.hash.includes('chedokucomInApp')
+    if (chedokucomInApp){
+      ApplyAppModifications(showConnectivity=false)
+    }
     redirect_if_inapp_chedoku_reachable()
     var firebase_loaded = false
     var game = new Chess();
@@ -667,7 +670,7 @@
 
 
     $(document).ready(function () {
-      if (!window.location.hash.includes('daily') && !chedokcomInApp
+      if (!window.location.hash.includes('daily') && !chedokucomInApp
       ) {
         // daily puzzles are exceptional, not overlay popup is needed
         $('.popup-overlay').css("display", "flex").hide().fadeIn();
