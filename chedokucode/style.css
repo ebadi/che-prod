@@ -112,7 +112,7 @@ a:hover, a:visited, a:link, a:active
 
 .alert .close {
   float: right;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 10px 0px 20px;
   cursor: pointer;
 }
 
