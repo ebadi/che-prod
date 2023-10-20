@@ -215,7 +215,7 @@ body {
   font-size: 10px;
   /*font-weight: bold;*/
   /*text-transform: uppercase;*/
-  background: #39a3c0;
+  background: #3b91b3;
   -moz-border-radius: inherit;
   -webkit-border-radius: inherit;
   border-radius: inherit;
@@ -425,7 +425,7 @@ body {
 
 .stylish {
   margin-top: 3px;
-  background: #39a3c0;
+  background: #3b91b3;
   /* margin: 5px; */
   padding-right: 7px;
   border-radius: 5px;
@@ -692,7 +692,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background: #f6f6f6;
+  background: #f4f2e5;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: #3b4351;
@@ -722,7 +722,7 @@ header {
   justify-content: space-between;
   min-height: 70px;
   width: 100%;
-  background: #448AFF;
+  background: #3b91b3;
   /*#448AFF;*/
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.14), 0 1px 4px rgba(0, 0, 0, 0.28);
   z-index: 1;
