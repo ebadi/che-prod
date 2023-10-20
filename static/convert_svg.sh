@@ -19,7 +19,7 @@ convert -density 200 logo-with-circle.svg -resize 57x57 -transparent white apple
 
 
 
-apple-touch-icon-180x180.png
+
 
 convert -density 256x256 -background transparent logo.svg -define icon:auto-resize -colors 256 favicon.ico
 rm ../favicon.ico
