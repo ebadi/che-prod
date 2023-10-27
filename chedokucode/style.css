@@ -769,8 +769,8 @@ nav ul {
 }
 
 nav ul li {
-  /*display: flex;*/
-  /* flex-direction:column; */
+  display: flex;
+  flex-direction:column;
   align-items: center;
   margin-right: 30px;
   /*max-width: 80px;*/
