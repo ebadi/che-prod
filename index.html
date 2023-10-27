@@ -671,7 +671,7 @@
 
 
     $(document).ready(function () {
-      if (!window.location.hash.includes('daily') && !chedokucomInApp
+      if (firstVisit() && !window.location.hash.includes('daily') && !chedokucomInApp
       ) {
         // daily puzzles are exceptional, not overlay popup is needed
         $('.popup-overlay').css("display", "flex").hide().fadeIn();
