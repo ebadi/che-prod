@@ -515,7 +515,7 @@ body {
 .popup {
   display: inline-block;
   width: 300px;
-  height: 570px;
+  height: 550px;
 
   padding: 10px;
   min-height: 300px;
@@ -535,7 +535,7 @@ p {
   /*padding: 0 1rem; */
   margin: 0;
   margin-top: 0.5rem;
-  margin-bottom: -0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 
@@ -551,7 +551,7 @@ div.slider p {
 a.popup-daily,
 a.popup-tutorial,
 a.popup-login {
-  margin-top: 10px;
+  margin-top: 5px;
   display: inline-block;
   color: white;
   background-color: #3b91b3;
