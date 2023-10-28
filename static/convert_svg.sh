@@ -6,10 +6,21 @@ convert -background none   logo.svg -resize 200x200\!  logo200x200.png
 convert -background none   logo.svg -resize 180x180\!  logo180x180.png
 convert -background none   logo.svg -resize 350x350\!  logo350x350.png
 convert -background none   logo.svg -resize 512x512\!  logo512x512.png
-convert -background none   logo.svg -resize 16x16\!  logo16x16.png
-convert -background none   logo.svg -resize 32x32\!  logo32x32.png
+convert -background none   logo.svg -resize 16x16\!    logo16x16.png
+convert -background none   logo.svg -resize 32x32\!    logo32x32.png
 convert -background none   logo.svg -resize 144x144\!  logo144x144.png
 
+convert -background none   logo.svg -resize 36x36\!    logo36x36.png
+convert -background none   logo.svg -resize 48x48\!    logo48x48.png
+convert -background none   logo.svg -resize 72x72\!    logo72x72.png
+convert -background none   logo.svg -resize 96x96\!    logo96x96.png
+convert -background none   logo.svg -resize 192x192\!  logo192x192.png
+convert -background none   logo.svg -resize 256x256\!  logo256x256.png
+convert -background none   logo.svg -resize 384x384\!  logo384x384.png
+convert -background none   logo.svg -resize 650x650\!  logo650x650.png
+convert -background none   logo.svg -resize 70x70\!    logo70x70.png
+convert -background none   logo.svg -resize 150x150\!  logo150x150.png
+convert -background none   logo.svg -resize 310x310\!  logo310x310.png
 
 convert -background none   logo-with-circle.svg -resize 57x57\!  logo-with-circle57x57.png
 convert -background none   logo-with-circle.svg -resize 100x100\!  logo-with-circle100x100.png
