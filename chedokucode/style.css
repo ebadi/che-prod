@@ -375,13 +375,13 @@ body {
 }
 
 .smallnumber{
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 0.8em;
   color: #ffffff;
   font-weight: bold;
-  line-height: 1.0em;
+  line-height: 1.3em;
   text-align: center;
-  width: 1.0em;
+  width: 1.3em;
 }
 /* notation */
 .notation-322f9 {
@@ -407,8 +407,8 @@ body {
 }
 
 .numeric-top-right {
-  top: 1px;
-  right: 1px;
+  top: 2px;
+  right: 3px;
 }
 
 .controlledwhite {
