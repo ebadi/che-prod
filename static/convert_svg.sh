@@ -55,6 +55,9 @@ convert -background none -density 288  logo-with-circle.svg -gravity center -res
 
 png2icns favicon.icns icon-only.png
 
+convert -background white -gravity center  logo-with-circle.svg -resize 200x200 -extent 600x250 header.png
+
+
 
 
 #mkdir ../../resources
