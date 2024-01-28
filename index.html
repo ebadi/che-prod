@@ -103,6 +103,7 @@
           <li id="item-download"><i class='material-icons'>download</i>Download</li>
           <li id="item-rules"><i class='material-icons'>rules</i>Rules</li>
           <li id="item-daily"><i class='material-icons'>today</i>Today's Puzzle</li>
+          <li id="item-darkmode"><i class='material-icons'>dark_mode</i>Dark mode</li>
           <!--  <li id="item-mailist"><i class='material-icons'>attach_email</i>Puzzle Newsletter</li> -->
         </ul>
       </nav>
@@ -120,6 +121,7 @@
         <li id="item-download-side"><i class='material-icons'>download</i>Downloads</li>
         <li id="item-rules-side"><i class='material-icons'>rules</i>Rules</li>
         <li id="item-daily-side"><i class='material-icons'>today</i>Today's Puzzle</li>
+        <li id="item-darkmode-side"><i class='material-icons'>dark_mode</i>Dark mode</li>
         <!--  <li id="item-mailist-side"><i class='material-icons'>attach_email</i>Puzzle Newsletter</li> -->
       </ul>
     </nav>
@@ -631,7 +633,7 @@
       userGameResults = []
     }
     var is_solution_is_pressed = false
-
+    var darkmode = true
     var boardElement = $('#board')
     var squareClass = 'square-55d63'
     var squareToHighlight = null
