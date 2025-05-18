@@ -442,6 +442,8 @@ body {
 .stylish {
   margin-top: 3px;
   background: #3b91b3;
+  align-items: center;  /* Vertically centers the icon and text */
+  gap: 8px;             /* Space between icon and text */
   /* margin: 5px; */
   padding-right: 7px;
   border-radius: 5px;
@@ -450,6 +452,10 @@ body {
   border: none;
   padding-bottom: 9px;
   height: 40px;
+}
+
+.stylish i {
+  font-size: 20px;
 }
 
 .dailybutton {
