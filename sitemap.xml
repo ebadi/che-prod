@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- List only final URLs that return 200: no redirects (use the trailing
+     slash for directories) and no SPA routes that GitHub Pages serves as 404.
+     deploy.sh sends these URLs to IndexNow (scripts/indexnow.sh). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://chedoku.com</loc>
-  <priority>1.00</priority>
+  <loc>https://chedoku.com/</loc>
+  <priority>1.0</priority>
 </url>
 <url>
-  <loc>https://chedoku.com/about</loc>
+  <loc>https://chedoku.com/rules/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://chedoku.com/about/</loc>
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>https://chedoku.com/rules</loc>
-  <priority>0.7</priority>
+  <loc>https://chedoku.com/blog/</loc>
+  <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://chedoku.com/privacy</loc>
-  <priority>0.3</priority>
-</url>
-<url>
-  <loc>https://chedoku.com/delete-account</loc>
-  <priority>0.3</priority>
-</url>
-<url>
-  <loc>https://chedoku.com/blog</loc>
+  <loc>https://chedoku.com/blog/chessPuzzles</loc>
   <priority>0.4</priority>
 </url>
 <url>
@@ -47,5 +46,13 @@
 <url>
   <loc>https://chedoku.com/blog/posts/2026-08-19_Chedoku-Now-Has-a-Real-App.html</loc>
   <priority>0.4</priority>
+</url>
+<url>
+  <loc>https://chedoku.com/privacy/</loc>
+  <priority>0.3</priority>
+</url>
+<url>
+  <loc>https://chedoku.com/delete-account/</loc>
+  <priority>0.3</priority>
 </url>
 </urlset>

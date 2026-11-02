@@ -4,7 +4,42 @@
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Chedoku</title>
+    <!-- Literal, not Chedoku: that expands to app.json's "Chedoku", which
+         Bing flags as too short. This file is also copied to 404.html by
+         deploy.sh, so these tags describe the home page only. -->
+    <title>Chedoku: Free Online Chess Puzzle with Sudoku Logic</title>
+    <meta name="description" content="Chedoku is a free logic puzzle on a chess board. Move the pieces until the threats on each square match its number. Play on the web, Android and iOS." />
+    <link rel="canonical" href="https://chedoku.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chedoku" />
+    <meta property="og:title" content="Chedoku: Free Online Chess Puzzle with Sudoku Logic" />
+    <meta property="og:description" content="Chedoku is a free logic puzzle on a chess board. Move the pieces until the threats on each square match its number. Play on the web, Android and iOS." />
+    <meta property="og:url" content="https://chedoku.com/" />
+    <meta property="og:image" content="https://chedoku.com/branding/chedoku-icon.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@chedoku" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Chedoku",
+        "url": "https://chedoku.com/",
+        "image": "https://chedoku.com/branding/chedoku-icon.png",
+        "description": "Chedoku is a free logic puzzle on a chess board. It mixes chess, sudoku and minesweeper. Move the pieces until the number of threats on each square matches its target number.",
+        "genre": ["Puzzle", "Logic puzzle", "Chess puzzle"],
+        "gamePlatform": ["Web browser", "Android", "iOS"],
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web, Android, iOS",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=com.nordara.chedoku",
+          "https://apps.apple.com/app/id6807831096",
+          "https://twitter.com/chedoku",
+          "https://www.youtube.com/@chedoku"
+        ]
+      }
+    </script>
     <!-- Yandex flags favicon.ico's 48x48 cap; these give it an SVG and a
          120x120 PNG to pick up instead (see support/webmaster/en/search-results/favicon). -->
     <link rel="icon" type="image/svg+xml" href="/branding/logo.svg" />
@@ -26,17 +61,55 @@
         height: 100%;
         flex: 1;
       }
+      /* The static intro below. It scrolls on its own because body has
+         overflow: hidden, so the text stays readable without JavaScript. */
+      #seo-intro {
+        flex: 1;
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding: 32px 24px;
+        background: #F4F1EA;
+        color: #1E2A38;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      #seo-intro .inner { max-width: 720px; margin: 0 auto; }
+      #seo-intro p { line-height: 1.55; }
+      #seo-intro a { color: #3b91b3; }
+      #seo-intro nav a { margin-right: 12px; }
     </style>
   <link rel="icon" href="/favicon.ico"/><link rel="preload" href="/_expo/static/css/global-87fd0564cfa78f37afcb8d7603e15d75.css" as="style">
 <link rel="stylesheet" href="/_expo/static/css/global-87fd0564cfa78f37afcb8d7603e15d75.css"></head>
 
   <body>
-    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
     <noscript>
-      You need to enable JavaScript to run this app.
+      You must turn on JavaScript to play Chedoku.
     </noscript>
-    <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-  <script src="/_expo/static/js/web/index-79f43aafc5b236c1e614a1af63e367e7.js" defer></script>
+    <!-- The root element for your Expo app. With web.output "single", Expo
+         mounts with createRoot (not hydrateRoot), so React replaces this
+         static intro when the game starts. Crawlers that do not run
+         JavaScript get a real heading and text here. -->
+    <div id="root">
+      <main id="seo-intro">
+        <div class="inner">
+          <h1>Chedoku: A Chess Puzzle with Sudoku Logic</h1>
+          <p>Chedoku is a free logic puzzle on a chess board. It mixes chess, sudoku and minesweeper into one puzzle.</p>
+          <h2>How to play</h2>
+          <p>Some squares on the board show a large number. This number tells how many pieces must threaten that square.
+          Move the pieces on the board until each square has the correct number of threats.
+          A white piece adds one threat. A black piece removes one threat.
+          You do not have to obey the rules of chess when you move a piece.</p>
+          <p>Chedoku has 20 difficulty levels and a new daily puzzle each day.
+          You can play in your web browser, on Android and on iOS.</p>
+          <nav>
+            <a href="/rules/">Rules</a>
+            <a href="/about/">About</a>
+            <a href="/blog/">Blog</a>
+            <a href="/get/">Get the app</a>
+          </nav>
+          <p>The game loads now.</p>
+        </div>
+      </main>
+    </div>
+  <script src="/_expo/static/js/web/index-5adfa9ad9005c57c6582d9a1df6a6846.js" defer></script>
 </body>
 </html>

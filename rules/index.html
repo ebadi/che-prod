@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Static page, so crawlers get a real 200 and real text. It replaces the
+     src/app/rules.web.tsx route on chedoku.com: GitHub Pages serves this
+     file for /rules and /rules/ before the 404.html SPA fallback. -->
+<title>Chedoku Rules: How to Solve the Chess Logic Puzzle</title>
+<meta name="description" content="Learn the Chedoku rules. Move the chess pieces until the threats on each square match its number. See how each piece threatens squares, and read the FAQ.">
+<link rel="canonical" href="https://chedoku.com/rules/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Chedoku">
+<meta property="og:title" content="Chedoku Rules: How to Solve the Chess Logic Puzzle">
+<meta property="og:description" content="Learn the Chedoku rules. Move the chess pieces until the threats on each square match its number. See how each piece threatens squares, and read the FAQ.">
+<meta property="og:url" content="https://chedoku.com/rules/">
+<meta property="og:image" content="https://chedoku.com/branding/chedoku-icon.png">
+<link rel="icon" type="image/svg+xml" href="/branding/logo.svg">
+<link rel="icon" type="image/png" sizes="120x120" href="/favicon-120.png">
+<style>
+  body {
+    margin: 0;
+    background: #F4F1EA;
+    color: #1E2A38;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+  h1 { margin-bottom: 12px; }
+  h2 { margin-top: 24px; margin-bottom: 4px; }
+  h3 { margin-top: 16px; margin-bottom: 4px; font-size: 16px; }
+  p { line-height: 1.55; margin: 4px 0; }
+  a { color: #3b91b3; }
+  a:hover { color: #2d7290; }
+  img { display: block; margin: 12px auto; max-width: 100%; height: auto; }
+  .piece { margin-bottom: 12px; }
+  .cta { margin-top: 20px; font-weight: 600; }
+  footer {
+    margin-top: 24px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 13px;
+  }
+  footer a { margin: 0 6px; }
+  footer .copyright { opacity: 0.5; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="content">
+  <h1>Chedoku Puzzle Rules</h1>
+
+  <p>Some squares on the board show a large number. This number is the target. It tells how many pieces
+  must threaten that square. Move the chess pieces until each square has the correct number of threats.</p>
+  <p>A white piece adds one threat (+1). A black piece removes one threat (−1).</p>
+
+  <img src="/rule-diagrams/gameplay-demo.gif" width="200" height="199" alt="A player moves pieces until all the numbers on the board are correct">
+
+  <p class="cta"><a href="/">Play Chedoku now</a></p>
+
+  <h2>How each chess piece threatens squares</h2>
+
+  <div class="piece">
+    <h3>Pawn (♙)</h3>
+    <p>A pawn threatens the two squares diagonally in front of it. A pawn does not threaten the square directly in front of it.</p>
+    <img src="/rule-diagrams/pawn.png" width="181" height="181" alt="The squares that a pawn threatens">
+  </div>
+  <div class="piece">
+    <h3>King (♔)</h3>
+    <p>A king threatens each square next to it, in all directions.</p>
+    <img src="/rule-diagrams/king.png" width="182" height="182" alt="The squares that a king threatens">
+  </div>
+  <div class="piece">
+    <h3>Rook (♖)</h3>
+    <p>A rook threatens all squares along its row and its column. Another piece stops the line.</p>
+    <img src="/rule-diagrams/rook.png" width="182" height="179" alt="The squares that a rook threatens">
+  </div>
+  <div class="piece">
+    <h3>Bishop (♗)</h3>
+    <p>A bishop threatens all squares along its diagonals. Another piece stops the line.</p>
+    <img src="/rule-diagrams/bishop.png" width="184" height="183" alt="The squares that a bishop threatens">
+  </div>
+  <div class="piece">
+    <h3>Queen (♕)</h3>
+    <p>A queen threatens like a rook and a bishop together: along its row, its column and its diagonals. Another piece stops the line.</p>
+    <img src="/rule-diagrams/queen.png" width="181" height="182" alt="The squares that a queen threatens">
+  </div>
+  <div class="piece">
+    <h3>Knight (♘)</h3>
+    <p>A knight threatens in an "L" shape: two squares in one direction, then one square to the side. The knight is the only piece that can jump over other pieces.</p>
+    <img src="/rule-diagrams/knight.png" width="182" height="182" alt="The squares that a knight threatens">
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <h3>Must I obey the rules of chess when I move a piece?</h3>
+  <p>No. Chedoku uses the rules of chess only to count the threats. You can move a piece to any empty square.
+  A puzzle can show a position that is not possible in real chess. For example, a puzzle can have many pieces,
+  a pawn on the first or last row, no king, or no pieces of one color.</p>
+
+  <h3>Is there a limit on moves or time?</h3>
+  <p>No. You can move the pieces as many times as necessary. When you find a solution, the game shows
+  the number of moves and the time.</p>
+
+  <h3>Can I remove a piece or add a piece?</h3>
+  <p>No. You can only move the pieces that are on the board.</p>
+
+  <h3>What do the colors of the numbers mean?</h3>
+  <p>Green shows that the square has the correct number of threats. Red shows that the number of threats
+  is not correct. A darker red shows a larger difference.</p>
+
+  <h3>What is the difference between the large and the small numbers?</h3>
+  <p>The large number is the target threat for the square. The small number is the current threat from
+  the pieces in their current positions. To hide the small numbers, use the Hints setting.</p>
+
+  <h3>What is the difference between a valid solution (☑️) and a perfect solution (✅)?</h3>
+  <p>Some puzzles have more than one solution. When all squares with a large number have the correct
+  threat, you have a valid solution (☑️). Other squares can also have threats in a valid solution.</p>
+  <p>When all squares with a large number have the correct threat and all other squares have zero threat,
+  you have a perfect solution (✅). To see a perfect solution, tap the eye icon.</p>
+  <p>Puzzles with black pieces make a perfect solution more difficult. A white threat (+1) and a black
+  threat (−1) on the same square cancel each other. Thus, a square with zero threat can have two pieces
+  of opposite colors that threaten it.</p>
+
+  <h3>Too easy? Do you have more difficult puzzles?</h3>
+  <p>Yes. Use the level controls on the Practice tab to select a higher level. More pieces and more black
+  pieces make a puzzle more difficult.</p>
+
+  <h3>Too difficult? Do you have easier puzzles?</h3>
+  <p>Yes. Start with the Tutorial tab. Then play the low levels. Puzzles with few pieces and no black pieces are the easiest.</p>
+
+  <p>For solving strategies, read <a href="/blog/posts/2023-01-23_How-to-solve-chedoku-part-1-learning-chess-threat-patterns.html">part 1</a>
+  and <a href="/blog/posts/2023-03-04_How-to-solve-chedoku-part-2-strategies-for-complex-puzzles.html">part 2</a>
+  of our guide on the blog.</p>
+
+  <footer>
+    <a href="/">Home</a>&middot;
+    <a href="/about/">About</a>&middot;
+    <a href="mailto:chedoku@gmail.com">Contact</a>&middot;
+    <a href="/rules/">Rules</a>&middot;
+    <a href="/privacy/">Privacy</a>&middot;
+    <a href="/delete-account/">Delete Account</a>&middot;
+    <a href="/blog/">Blog</a>&middot;
+    <a href="https://pricepinner.com">PricePinner</a>
+    <div class="copyright">&copy; 2026 Chedoku.com</div>
+  </footer>
+</div>
+</body>
+</html>
